@@ -1,11 +1,11 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: alertmanager-main
   namespace: monitoring
 spec:
   rules:
-  - host: alertmanager.192.168.1.15.nip.io
+  - host: alertmanager.microk8s.homelab.satackey.com
     http:
       paths:
       - backend:
@@ -14,4 +14,4 @@ spec:
         path: /
   tls:
   - hosts:
-    - alertmanager.192.168.1.15.nip.io
+    - alertmanager.microk8s.homelab.satackey.com
