@@ -22,7 +22,7 @@
     },
     {
       name: 'metallbExporter',
-      enabled: false,
+      enabled: true,
       file: import 'modules/metallb.jsonnet',
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       name: 'traefikExporter',
-      enabled: false,
+      enabled: true,
       file: import 'modules/traefik.jsonnet',
     },
     {
